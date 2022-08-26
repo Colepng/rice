@@ -1,0 +1,13 @@
+*
+!*/
+
+# track this file
+!.gitignore
+
+# whitelist
+!bspwm/**
+!sxhkd/**
+!picom/**
+!polybar/**
+!polybar themes/**
+!rofi/**
