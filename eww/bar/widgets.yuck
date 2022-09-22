@@ -1,0 +1,54 @@
+;vars
+(defpoll time :interval "1s"
+  "date '+%b %d, %Y %H:%M:%S '")
+
+;widgets
+(defwidget workspaces []
+    (box :class "workspaces"
+         :active true
+         :halign "start"
+         :orientation "h"
+         :spacing 10
+         :space-evenly true
+         :height 40
+         (button :onclick "bspc desktop -f ^1" "I")
+         (button :onclick "bspc desktop -f ^2" "II")
+         (button :onclick "bspc desktop -f ^3" "III")
+         (button :onclick "bspc desktop -f ^4" "IV")
+         (button :onclick "bspc desktop -f ^5" "V")
+         (button :onclick "bspc desktop -f ^6" "VI")
+         (button :onclick "bspc desktop -f ^7" "VII")
+         (button :onclick "bspc desktop -f ^8" "VIII")
+         (button :onclick "bspc desktop -f ^9" "IX")
+         (button :onclick "bspc desktop -f ^9" "X")
+    )
+)
+
+(defwidget icon []
+    (box
+        :class "icon"
+        :orientation "h"
+        :halign "start"
+        :spacing -10
+        :space-evenly true
+        (button 
+            :halign "start"
+            :onclick "notify-send 'opening kingdom wiki' | xdg-open https://kingdomthegame.fandom.com/wiki/Kingdom_Wiki"
+            (image 
+                :path "/home/cole/Pictures/eww/Kingdom/KingdomClassic.png"
+                :image-height 40
+            )
+        )   
+    )
+)
+
+(defwidget metric [label value onchange]
+    (box :orientation "h"
+         :class "metric"
+         :space-evenly false
+      (box :class "label" label)
+      (scale :min 0
+             :max 101
+             :active {onchange != ""}
+             :value value
+             :onchange onchange)))

@@ -1,0 +1,43 @@
+// * {
+//     all: unset; //Unsets everything so you can style everything from scratch
+//   }
+  
+//Global Styles
+.bar {
+    background-color: #3a3a3a;
+    color: #b0b4bc;
+}
+
+// Styles on classes (see eww.yuck for more information)
+.workspaces button{
+    all: unset;
+}
+.workspaces button:hover {
+    color: #774de2;
+}
+.icon button{
+    all: unset;
+    padding-left: 10px;
+}
+.right slider {
+    all: unset;
+}
+.right button{
+    all: unset;
+}
+.metric scale trough {
+    all: unset;
+    background-color: #4e4e4e;
+    border-radius: 10px;
+    min-height: 20px;
+    min-width: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.metric scale trough highlight {
+    all: unset;
+    background-color: #774de2;
+    color: #000000;
+    border-radius: 10px;
+    //margin-left: 10px;
+}

@@ -2,8 +2,10 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-$HOME/.config/polybar/launch.sh
+# $HOME/.config/polybar/launch.sh
 #rm ~/.Xauthority
+eww open bar --config /home/cole/.config/eww/bar
+discord --start-minimized
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
