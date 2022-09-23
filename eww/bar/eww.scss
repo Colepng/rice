@@ -4,8 +4,9 @@
   
 //Global Styles
 .bar {
-    background-color: #3a3a3a;
-    color: #b0b4bc;
+    background-color: #FDFFF7;
+    color: #3e3e3c;
+    font-size: large;
 }
 
 // Styles on classes (see eww.yuck for more information)
@@ -13,7 +14,7 @@
     all: unset;
 }
 .workspaces button:hover {
-    color: #774de2;
+    color: #7A18EA;
 }
 .icon button{
     all: unset;
@@ -27,7 +28,7 @@
 }
 .metric scale trough {
     all: unset;
-    background-color: #4e4e4e;
+    background-color: #3e3e3c;
     border-radius: 10px;
     min-height: 20px;
     min-width: 150px;
@@ -36,8 +37,11 @@
 }
 .metric scale trough highlight {
     all: unset;
-    background-color: #774de2;
-    color: #000000;
+    background-color: #7e1fea;
+    color: #3e3e3c;
     border-radius: 10px;
     //margin-left: 10px;
+}
+.battery_icon{
+    font-size: larger;
 }

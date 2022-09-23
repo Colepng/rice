@@ -28,15 +28,15 @@
         :orientation "h"
         :halign "end"
         :spacing 10
-        :space-evenly true
+        :space-evenly false
         (metric 
             :label "  "
             :value {round((1 - (EWW_DISK["/"].free / EWW_DISK["/"].total)) * 100, 0)}
             :onchange ""
         )
         time
-        (button :onclick "bash power.sh" "⏻"
-        )
+        (battery)
+        (button :onclick "bash power.sh" "⏻  ")
     )
 )
 

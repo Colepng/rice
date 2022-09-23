@@ -2,6 +2,8 @@
 (defpoll time :interval "1s"
   "date '+%b %d, %Y %H:%M:%S '")
 
+(defpoll activewindow :interval "1s" "scripts/getactivewindow")
+
 ;widgets
 (defwidget workspaces []
     (box :class "workspaces"
@@ -11,7 +13,7 @@
          :spacing 10
          :space-evenly true
          :height 40
-         (button :onclick "bspc desktop -f ^1" "I")
+         (button :onclick "bspc desktop -f ^1" "I");activewindow)
          (button :onclick "bspc desktop -f ^2" "II")
          (button :onclick "bspc desktop -f ^3" "III")
          (button :onclick "bspc desktop -f ^4" "IV")
@@ -21,6 +23,24 @@
          (button :onclick "bspc desktop -f ^8" "VIII")
          (button :onclick "bspc desktop -f ^9" "IX")
          (button :onclick "bspc desktop -f ^9" "X")
+    )
+)
+(defwidget battery []
+    (box 
+        :class "battery"
+        :orientation "h"
+        :spacing 10
+        :space-evenly false
+        :height 40
+        (box :class "battery"
+            :orientation "h"
+            :spacing 0
+            :space-evenly false
+            :height 40
+            (label :class "battery_percent" :text {EWW_BATTERY["BAT0"].capacity})
+            "%"
+        )
+        (label :class "battery_icon" :text {EWW_BATTERY["BAT0"].status == "Charging" ? "" : ""})
     )
 )
 
