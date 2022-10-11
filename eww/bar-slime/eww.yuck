@@ -1,0 +1,68 @@
+(include "widgets.yuck")
+
+(defwidget left []
+    (box 
+        :class "left"
+        :orientation "h"
+        :halign "start"
+        :spacing 10
+        :space-evenly true
+    (icon)
+    )
+)
+
+(defwidget middle []
+    (box 
+    :class "middle"
+    :orientation "h"
+    :halign "center"
+    :spacing 10
+    :space-evenly true
+    (middle)
+    )
+)
+
+(defwidget right []
+    (box
+        :class "right"
+        :orientation "h"
+        :halign "end"
+        :spacing 10
+        :space-evenly false
+        (metric 
+            :label "  "
+            :value {round((1 - (EWW_DISK["/"].free / EWW_DISK["/"].total)) * 100, 0)}
+            :onchange ""
+        )
+        time
+        (battery)
+        (button :onclick "bash power.sh" "⏻  ")
+    )
+)
+
+(defwidget bar []
+    (centerbox
+        :orientation "h"
+        (left)
+        (workspaces)
+        (right)
+    )
+)
+
+(defwindow bar
+    :monitor 0
+    ; :windowtype "dock"
+    :geometry   (geometry
+                    :x "0%"
+                    :y "0%"
+                    :width "100%"
+                    :height "30px"
+                    :anchor "top center"
+                )
+    :stacking "fg"
+    :reserve (struts :side "top" :distance "40px")     
+    :wm-ignore false  
+    ; (workspaces)
+    ; (image)
+    (bar)
+)

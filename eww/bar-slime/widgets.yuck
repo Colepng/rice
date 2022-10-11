@@ -55,7 +55,7 @@
             :halign "start"
             :onclick "notify-send 'opening kingdom wiki' | xdg-open https://kingdomthegame.fandom.com/wiki/Kingdom_Wiki"
             (image 
-                :path "/home/cole/Pictures/anime/Slime_Rimuru_pruple.png"
+                :path "/home/cole/Pictures/eww/Kingdom/KingdomClassic.png"
                 :image-height 40
             )
         )   

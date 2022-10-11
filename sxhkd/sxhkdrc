@@ -4,6 +4,10 @@
 
 # terminal emulator
 super + Return
+	kitty
+
+# terminal kitty
+super + shift + Return
 	xfce4-terminal
 
 # program launcher
@@ -95,7 +99,7 @@ super + {_,shift + }{h,j,k,l}
 # focus the node for the given path jump
 super + {p,b,comma,period}
 	bspc node -f @{parent,brother,first,second}
-
+-f,node
 # focus the next/previous window in the current desktop
 super + {_,shift + }c
 	bspc node -f {next,prev}.local.!hidden.window
@@ -110,14 +114,18 @@ super + {grave,Tab}
 
 # focus the older or newer node in the focus history
 super + {o,i}
-	bspc wm -h off; \
+	bspc wm -h off;
 	bspc node {older,newer} -f; \
 	bspc wm -h on
 
 # focus or send to the given desktop
+#if [[ $(xrandr --query | grep -o 'Virtual2') = *Virtual2* ]]; then
 super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} '^{1-9,10}'
-
+	bspc {desktop -f,node -d} '^{1-5,6-9 -f, 10 -f}'
+# else
+# super +{_,shift + }{1-9,0}
+# 	bspc {desktop -f,node -d} '^{1-9,10}'
+# fi
 #
 # preselect
 #

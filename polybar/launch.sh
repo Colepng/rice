@@ -6,7 +6,11 @@ killall -q polybar
 # polybar-msg cmd quit
 
 # Launch Polybar, using default config location ~/.config/polybar/config.ini
-
-polybar -r -c /home/cole/.config/polybar/Themes/kingdom/bar.ini default | tee -a /tmp/polybar.log & disown
-
-echo "Polybar launched..."
+if type "xrandr"; then
+  for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+    MONITOR=$m polybar --reload bar &
+  done
+else
+  polybar --reload bar &
+fi
+# polybar -r | tee -a /tmp/polybar.log & disown

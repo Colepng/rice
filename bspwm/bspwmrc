@@ -2,21 +2,30 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-# $HOME/.config/polybar/launch.sh
+$HOME/.config/polybar/launch.sh &
 #rm ~/.Xauthority
-eww open bar --config /home/cole/.config/eww/bar
-discord --start-minimized
+#discord --start-minimized &
 
+if [[ $(xrandr --query | grep -o 'Virtual2 connected') = "Virtual2 connected" ]]; then
+bspc monitor Virtual1 -d I II III IV V
+bspc monitor Virtual2 -d VI VII VIII IX X
+xrandr --output Virtual1 --primary --mode 1920x1080 --output Virtual2 --mode 1680x1050
+else
+echo test
 bspc monitor -d I II III IV V VI VII VIII IX X
+xrandr --output Virtual1 --mode 2560x1600
+echo test
+fi
 
+nitrogen --restore
 bspc config border_width        4
 bspc config window_gap          12
 
-bspc config normal_border_color "3E3E3C"
+bspc config normal_border_color "#3E3E3C"
 bspc config focused_border_color "#774de2"
 
 
-bspc config split_ratio          0.52
+bspc config split_ratio          0.50
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
@@ -25,3 +34,4 @@ bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
+bspc rule -a discord desktop='^4'
