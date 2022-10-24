@@ -2,36 +2,46 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-$HOME/.config/polybar/launch.sh &
+
+
 #rm ~/.Xauthority
-#discord --start-minimized &
+discord --start-minimized &
 
-if [[ $(xrandr --query | grep -o 'Virtual2 connected') = "Virtual2 connected" ]]; then
-bspc monitor Virtual1 -d I II III IV V
-bspc monitor Virtual2 -d VI VII VIII IX X
-xrandr --output Virtual1 --primary --mode 1920x1080 --output Virtual2 --mode 1680x1050
+if [[ $(xrandr --query | grep -o 'HDMI-0 connected') = "HDMI-0 connected" ]]; then
+xrandr --output DP-1-2 --primary --mode 1920x1080 --output HDMI-0 --mode 1680x1050 --output eDP-1 --off
+bspc monitor DP-1-2 -d Desktop Console 3 4 5
+bspc monitor HDMI-1-0 -d Music Discord 8 9 10
+bspc monitor eDP-1 -r 
+bspc rule -a discord desktop='^7'
+bspc rule -a cider desktop='^6'
 else
-echo test
-bspc monitor -d I II III IV V VI VII VIII IX X
-xrandr --output Virtual1 --mode 2560x1600
-echo test
+bspc monitor eDP-1 -d "Browser" School Console Discord Music 6 7 8 9 10
+bspc rule -a discord desktop='^3'
+bspc rule -a cider desktop='^4'
 fi
-
-nitrogen --restore
+# bspc monitor Virtual1 -d I II III IV V
+# bspc monitor Virtual2 -d VI VII VIII IX X
+# xrandr --output Virtual1 --primary --mode 1920x1080 --output Virtual2 --mode 1680x1050
+# else
+# bspc monitor -d Desktop Music Discord Console 5 6 7 8 9 10
+# xrandr --output eDP-1 --mode 2560x1600
+# fi
+#
+$HOME/.config/polybar/launch.sh &
+picom & 
+nitrogen --restore &
 bspc config border_width        4
 bspc config window_gap          12
 
 bspc config normal_border_color "#3E3E3C"
 bspc config focused_border_color "#774de2"
 
-
 bspc config split_ratio          0.50
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
-
+ 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
-bspc rule -a discord desktop='^4'
