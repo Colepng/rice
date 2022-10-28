@@ -1,7 +1,7 @@
 local c = require('vscode.colors')
 require('vscode').setup({
     -- Enable transparent background
-    transparent = true,
+    transparent = false,
 
     -- Enable italic comment
     italic_comments = true,

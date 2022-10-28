@@ -131,7 +131,7 @@
 # ncurses output method and a terminal that can change color definitions such as Gnome-terminal or rxvt.
 # if supported, ncurses mode will be forced on if user defined colors are used.
 # default is to keep current terminal color
- background = '#3E3E3C'
+; background = '#3E3E3C'
 ; foreground = default
 
 # SDL only support hex code colors, these are the default:
