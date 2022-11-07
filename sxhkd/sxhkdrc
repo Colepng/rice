@@ -42,17 +42,17 @@ super + z
 
 # volume control
 XF86AudioRaiseVolume
-	amixer -q set Master 5%+
+	~/.config/hypr/scripts/ChangeVolume 5%+
 	
 XF86AudioLowerVolume
-	amixer -q set Master 5%-
+	~/.config/hypr/scripts/ChangeVolume 5%-
 
 XF86AudioMute
-	amixer -q set Master toggle
+	~/.config/hypr/scripts/ChangeVolume toggle 
 # Brightness control
 XF86MonBrightnessUp
 	light -A 11.25
-XF86MonBrightnessDown
+F86MonBrightnessDown
 	light -U 11.25
 
 #---------------------------------------#
@@ -64,7 +64,7 @@ super + alt + {q,t}
 	bspc {quit,wm -r}
 
 # close and kill
-super + {_,shift + }w
+super + {_,shift + }q
 	bspc node -{c,k}
 
 # alternate between the tiled and monocle layout
