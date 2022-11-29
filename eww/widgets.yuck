@@ -1,0 +1,74 @@
+;vars
+(defpoll time :interval "1s"
+  "date '+%b %d, %Y %H:%M:%S '")
+
+(defpoll activewindow :interval "1s" "scripts/getactivewindow")
+
+;widgets
+(defwidget workspaces []
+    (box :class "workspaces"
+         :active true
+         :halign "start"
+         :orientation "h"
+         :spacing 10
+         :space-evenly true
+         :height 40
+         (button :onclick "hyprctl dispatch workspace 1" "いち");activewindow)
+         (button :onclick "hyprctl dispatch workspace 2" "に")
+         (button :onclick "hyprctl dispatch workspace 3" "さん")
+         (button :onclick "hyprctl dispatch workspace 4" "よん")
+         (button :onclick "hyprctl dispatch workspace 5" "ご")
+         (button :onclick "hyprctl dispatch workspace 6" "ろく")
+         (button :onclick "hyprctl dispatch workspace 7" "なな")
+         (button :onclick "hyprctl dispatch workspace 8" "はち")
+         (button :onclick "hyprctl dispatch workspace 9" "きゅう")
+         (button :onclick "hyprctl dispatch workspace 10" "じゅう")
+    )
+)
+(defwidget battery []
+    (box 
+        :class "battery"
+        :orientation "h"
+        :spacing 10
+        :space-evenly false
+        :height 40
+        (box :class "battery"
+            :orientation "h"
+            :spacing 0
+            :space-evenly false
+            :height 40
+            (label :class "battery_percent" :text {EWW_BATTERY["BAT0"].capacity})
+            "%"
+        )
+        (label :class "battery_icon" :text {EWW_BATTERY["BAT0"].status == "Charging" ? "" : ""})
+    )
+)
+
+(defwidget icon []
+    (box
+        :class "icon"
+        :orientation "h"
+        :halign "start"
+        :spacing -10
+        :space-evenly true
+        (button 
+            :halign "start"
+            :onclick "notify-send 'opening kingdom wiki' | xdg-open https://kingdomthegame.fandom.com/wiki/Kingdom_Wiki"
+            (image 
+                :path "/home/cole/Pictures/anime/Slime_Rimuru_pruple.png"
+                :image-height 40
+            )
+        )   
+    )
+)
+
+(defwidget metric [label value onchange]
+    (box :orientation "h"
+         :class "metric"
+         :space-evenly false
+      (box :class "label" label)
+      (scale :min 0
+             :max 101
+             :active {onchange != ""}
+             :value value
+             :onchange onchange)))
