@@ -52,7 +52,7 @@ XF86AudioMute
 # Brightness control
 XF86MonBrightnessUp
 	light -A 11.25
-F86MonBrightnessDown
+XF86MonBrightnessDown
 	light -U 11.25
 
 #---------------------------------------#

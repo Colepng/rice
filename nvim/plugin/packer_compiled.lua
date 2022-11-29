@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/home/cole/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-comment"] = {
+    loaded = true,
+    path = "/home/cole/.local/share/nvim/site/pack/packer/start/nvim-comment",
+    url = "https://github.com/terrortylor/nvim-comment"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/cole/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",

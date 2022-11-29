@@ -1,0 +1,7 @@
+filename=~/Pictures/screenshots/screenshot-"$(date +%F-%X)"
+if  [ $1 == "fullscreen" ]
+then
+grim - > $filename && wl-copy < $filename
+else
+grim -g "$(slurp)" - > $filename && wl-copy < $filename
+fi
