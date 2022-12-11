@@ -5,14 +5,10 @@
 !.gitignore
 
 # whitelist
-!bspwm/**
-!sxhkd/**
-!picom/**
-!polybar/**
-!polybar themes/**
 !rofi/**
 !eww/**
 !cava/**
 !kitty/**
 !nvim/**
 !hypr/**
+!ncmpcpp/**
