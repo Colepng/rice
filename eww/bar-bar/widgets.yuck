@@ -10,8 +10,8 @@
          :active true
          :halign "start"
          :orientation "h"
-         :spacing 10
-         :space-evenly true
+         :spacing 20
+         :space-evenly false ;true
          :height 40
          (button :onclick "hyprctl dispatch workspace 1" "いち");activewindow)
          (button :onclick "hyprctl dispatch workspace 2" "に")

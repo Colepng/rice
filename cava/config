@@ -143,7 +143,7 @@
 # background must also be defined in hex  or remain commented out. 1 = on, 0 = off.
 # You can define as many as 8 different colors. They range from bottom to top of screen
 gradient = 1
-gradient_count = 2
+gradient_count = 8
 
 # Black to Purple
 ;gradient_color_1 = '#000000'
@@ -189,7 +189,7 @@ gradient_color_2 = '#4D0E95'
 # Noise reduction, float 0 - 1. default 0.77
 # the raw visualization is very noisy, this factor adjusts the integral and gravity filters to keep the signal smooth
 # 1 will be very slow and smooth, 0 will be fast but noisy.
-; noise_reduction = 0.77
+; noise_reduction = 1 
 
 
 [eq]

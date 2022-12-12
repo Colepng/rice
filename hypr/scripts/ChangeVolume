@@ -5,7 +5,7 @@
 msgTag="myvolume"
 
 # Change the volume using alsa(might differ if you use pulseaudio)
-amixer -D pulse sset Master "$@"
+amixer -Mq set Master,0 "$@"
 
 # Query amixer for the current volume and whether or not the speaker is muted
 volume="$(amixer -D pulse sget Master | tail -1 | awk '{print $5}' | sed 's/[^0-9]*//g')"

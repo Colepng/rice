@@ -8,8 +8,7 @@ color1 #f18238
 color9 #d12a24
 color2 #9ed264
 color10 #a7d32c
-# color3 #f3ef6d
-color3 #bb86fc
+color3 #f3ef6d
 color11 #ff8948
 # color4 #4f96be
 # color12 #61b8d0
@@ -17,11 +16,8 @@ color4 #75d3ff
 color12 #75d4ff
 color5 #695abb
 color13 #695abb
-# color6 #d53864
-# color14 #d53864
-color6 #bb86fc
-color14 #9F54FB
-# color7 #fefffe
+color6 #d53864
+color14 #d53864
+color7 #fefffe
 color15 #fefffe
-color7 #9F54FB
 selection_foreground #000000

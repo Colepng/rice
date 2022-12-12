@@ -1,5 +1,5 @@
-filename=~/Pictures/screenshots/screenshot-"$(date +%F-%X)"
-if  [ $1 == "fullscreen" ]
+filename=/home/cole/Pictures/screenshots/screenshot-"$(date +%F-%X)".png
+if  [ $1 = "fullscreen" ]
 then
 grim - > $filename && wl-copy < $filename
 else

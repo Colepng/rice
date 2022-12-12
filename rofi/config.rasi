@@ -181,4 +181,7 @@ configuration {
 }
 //@theme "/usr/share/rofi/themes/sidebar.rasi"
 //@theme "/home/cole/.local/share/rofi/themes/simple-tokyonight.rasi"
-@theme "/home/cole/.local/share/rofi/themes/rounded-purple-dark.rasi"
+//@theme "/home/cole/.local/share/rofi/themes/rounded-purple-dark.rasi"
+/* @theme "/home/cole/.local/share/rofi/themes/spotlight-dark.rasi" */
+//@theme "/home/cole/.local/share/rofi/themes/windows11-list-light.rasi"
+@theme "/home/cole/.local/share/rofi/themes/launchpad.rasi"

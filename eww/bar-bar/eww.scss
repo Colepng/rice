@@ -1,0 +1,47 @@
+// * {
+//     all: unset; //Unsets everything so you can style everything from scratch
+//   }
+  
+//Global Styles
+.bar {
+    background-color: #3e3e3c;
+    color: #FDFFF7;
+    font-size: large;
+}
+
+// Styles on classes (see eww.yuck for more information)
+.workspaces button{
+    all: unset;
+}
+.workspaces button:hover {
+    color: #7A18EA;
+}
+.icon button{
+    all: unset;
+    padding-left: 10px;
+}
+.right slider {
+    all: unset;
+}
+.right button{
+    all: unset;
+}
+.metric scale trough {
+    all: unset;
+    background-color: #3e3e3c;
+    border-radius: 10px;
+    min-height: 20px;
+    min-width: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.metric scale trough highlight {
+    all: unset;
+    background-color: #7e1fea;
+    color: #3e3e3c;
+    border-radius: 10px;
+    //margin-left: 10px;
+}
+.battery_icon{
+    font-size: larger;
+}
