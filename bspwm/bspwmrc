@@ -3,11 +3,11 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 # Setups up my monitors
 if [[ $(xrandr --query | grep -o 'HDMI-1-0 connected') = "HDMI-1-0 connected" ]]; then
-	.screenlayout/all\ 3\ screens.sh
+	.screenlayout/2.sh
 	bspc wm -O DP-1-2 HDMI-1-0 eDP-1 
-	bspc monitor DP-1-2 -d Desktop Console 3 4 5
-	bspc monitor HDMI-1-0 -d Music Discord 8 9 
-	bspc monitor eDP-1 -d 10
+	bspc monitor DP-1-2 -d いち に さん よん ご  
+	bspc monitor HDMI-1-0 -d Mろくなな はち きゅう じゅう
+	# bspc monitor eDP-1 -d 10
 	bspc rule -a discord desktop='^7'
 	bspc rule -a cider desktop='^6'
 else
