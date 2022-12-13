@@ -42,6 +42,5 @@ You can install my rice by cloning the repo and copying the files to your .confi
 
 ```bash
 git clone https://github.com/Colepng/rice.git
-cd rice
 cp -ri rice/* ~/.config/
 ```
