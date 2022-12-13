@@ -7,6 +7,7 @@ WM          : Hyprland
 terminal    : kitty
 bar         : eww
 launcher    : rofi
+editor      : nvim
 ```
 
 ## Dependencies
@@ -16,6 +17,7 @@ launcher    : rofi
 - [rofi](https://github.com/davatorium/rofi) - App launcher
 - [dunst](https://github.com/dunst-project/dunst) - Notification Daemon
 - [socat](http://www.dest-unreach.org/socat/) - Socket utility for eww workspace module
+- [nvim](https://github.com/neovim/neovim) - Vim based terminal editor
 
 ## Installation
 
@@ -24,7 +26,7 @@ Assuming you have a working Arch Linux install or a arch based distro with yay i
 ### Install Dependencies
 
 ```bash
-yay -S hyprland-git eww-wayland rofi-ibonn-wayland socat
+yay -S hyprland-git eww-wayland rofi-ibonn-wayland socat nvim
 ```
 
 If you dont have an AUR helper installed, you can install one with the following commands:
@@ -42,6 +44,5 @@ You can install my rice by cloning the repo and copying the files to your .confi
 
 ```bash
 git clone https://github.com/Colepng/rice.git
-cd rice
 cp -ri rice/* ~/.config/
 ```
