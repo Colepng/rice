@@ -3,7 +3,7 @@
 #Apps
 dunst &
 discord --start-minimized &
-/home/cole/garden/eww/launch_bar &
+eww open bar0
 sleep 1 &&
 swww init &
 sleep 1 &&
