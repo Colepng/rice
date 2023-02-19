@@ -1,0 +1,22 @@
+$background: rgba(00, 00, 00, 0.3);
+$widget-background: rgba(30, 30, 30, 0.4);
+$shadow:    rgba(00, 00, 00, 0.4);
+$grey:      #606060;
+
+$black:     #3D4C5F;
+$red:       #EE4F84;
+$pruple2:     #bb86fc;
+$orange:    #F1FA8C;
+$blue:      #92B6F4;
+$purple:    #985EFF;
+$teal:      #24D1E7;
+$white:     #E5E5E5;
+
+.main {
+    background: rgba(00, 00, 00, 0.3);
+    color: #fff;
+    border-radius: 16px;
+    border-style: solid;
+    border-width: 2;
+    border-color: $pruple2;
+}

@@ -1,0 +1,39 @@
+(defpoll cover :interval "5s" "/bin/python /home/cole/.config/eww/media/scripts/artwork.py")
+(deflisten artist "playerctl --follow metadata --format {{artist}}")
+(deflisten song "playerctl --follow metadata --format {{title}}")
+
+(defwidget art []
+    (box
+        :height 100
+        :width 100
+        :valign "start"
+        :halign "center"
+        (image
+        :path cover if song != "No player could handle this command" else "/home/cole/.config/eww/media/scripts/NoCover.png"
+        :height 10
+        :width 10
+        )
+        (label
+        :text song
+        ; :halign "center"
+        ; :valign "start"
+        )
+        (label :text artist)
+        ; (label :text cover)    
+    )    
+)
+
+
+
+(defwindow main
+    :monitor 0
+    :geometry (geometry 
+        :x "15px"
+        :y "15px"
+        :width "100px"
+        :height "100px"
+        :anchor "top right")
+    :stacking "fg"
+    :class "main"
+    (art)
+)

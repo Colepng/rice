@@ -289,22 +289,23 @@
         :width "99%"
         :height "30px"
         :anchor "top center")
-    :stacking "fg"
+    :stacking "bg"
     ; :windowtype "dock"
     (bar_layout)
 )
-; (defwindow bar1
-;     :exclusive true 
-;     :monitor 1
-;     :geometry (geometry 
-;         :x "15px"
-;         :y "9px"
-;         :width "98%"
-;         :height "30px"
-;         :anchor "top center")
-;     :stacking "fg"
-;     :windowtype "dock"
-;     (bar_layout))
+(defwindow bar1
+    :exclusive true 
+    :monitor 1
+    :geometry (geometry 
+        :x "15px"
+        :y "9px"
+        :width "99%"
+        :height "30px"
+        :anchor "top center")
+    :stacking "bg"
+    ; :windowtype "dock"
+    (bar_layout))
+
 ; (defwindow bar2
 ;     :exclusive true
 ;     :monitor 
