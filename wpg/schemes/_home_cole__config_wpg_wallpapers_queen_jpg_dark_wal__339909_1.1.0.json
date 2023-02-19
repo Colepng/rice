@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cole/.config/wpg/wallpapers/queen.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#010101",
+        "foreground": "#ccd4d3",
+        "cursor": "#ccd4d3"
+    },
+    "colors": {
+        "color0": "#010101",
+        "color1": "#496274",
+        "color2": "#897F77",
+        "color3": "#2B6E96",
+        "color4": "#56718D",
+        "color5": "#3F909C",
+        "color6": "#658CA2",
+        "color7": "#ccd4d3",
+        "color8": "#8e9493",
+        "color9": "#496274",
+        "color10": "#897F77",
+        "color11": "#2B6E96",
+        "color12": "#56718D",
+        "color13": "#3F909C",
+        "color14": "#658CA2",
+        "color15": "#ccd4d3"
+    }
+}

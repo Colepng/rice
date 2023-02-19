@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cole/.config/wpg/wallpapers/1920x1080.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#101010",
+        "foreground": "#dedede",
+        "cursor": "#dedede"
+    },
+    "colors": {
+        "color0": "#101010",
+        "color1": "#3314D0",
+        "color2": "#370FFF",
+        "color3": "#4D30DB",
+        "color4": "#421CFF",
+        "color5": "#4E2CFF",
+        "color6": "#A2A2A2",
+        "color7": "#dedede",
+        "color8": "#9b9b9b",
+        "color9": "#3314D0",
+        "color10": "#370FFF",
+        "color11": "#4D30DB",
+        "color12": "#421CFF",
+        "color13": "#4E2CFF",
+        "color14": "#A2A2A2",
+        "color15": "#dedede"
+    }
+}

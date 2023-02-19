@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cole/.config/wpg/wallpapers/king.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#010101",
+        "foreground": "#d9d1bf",
+        "cursor": "#d9d1bf"
+    },
+    "colors": {
+        "color0": "#010101",
+        "color1": "#A85927",
+        "color2": "#C26D2B",
+        "color3": "#947453",
+        "color4": "#AA936B",
+        "color5": "#C8A467",
+        "color6": "#C8B78F",
+        "color7": "#d9d1bf",
+        "color8": "#979285",
+        "color9": "#A85927",
+        "color10": "#C26D2B",
+        "color11": "#947453",
+        "color12": "#AA936B",
+        "color13": "#C8A467",
+        "color14": "#C8B78F",
+        "color15": "#d9d1bf"
+    }
+}

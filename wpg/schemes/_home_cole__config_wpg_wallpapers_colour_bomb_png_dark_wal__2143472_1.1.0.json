@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cole/.config/wpg/wallpapers/colour_bomb.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#181921",
+        "foreground": "#fff3ff",
+        "cursor": "#fff3ff"
+    },
+    "colors": {
+        "color0": "#181921",
+        "color1": "#C771AC",
+        "color2": "#ECEC94",
+        "color3": "#DBA36B",
+        "color4": "#626F9A",
+        "color5": "#FC79C6",
+        "color6": "#75AFC8",
+        "color7": "#dac7d7",
+        "color8": "#2c2e3e",
+        "color9": "#ff7ee7",
+        "color10": "#ffffa7",
+        "color11": "#ffd375",
+        "color12": "#6f87d8",
+        "color13": "#ff85ff",
+        "color14": "#83ebff",
+        "color15": "#fff3ff"
+    }
+}
