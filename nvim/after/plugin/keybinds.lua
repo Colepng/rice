@@ -1,0 +1,2 @@
+-- reload color scheme
+-- vim.keymap.set('n', '<leader>cs', vim.cmd.colorscheme('pywal'), {})
