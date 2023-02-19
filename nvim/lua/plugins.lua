@@ -1,27 +1,53 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
+    use 'wbthomason/packer.nvim'
 
-  -- Post-install/update hook with neovim command
-  use 'nvim-treesitter/nvim-treesitter'
+    use ('nvim-treesitter/nvim-treesitter', {run = 'TSUpdate'})
+    use 'nvim-treesitter/playground'
 
-  use 'github/copilot.vim'
+    use 'mbbill/undotree'
 
-  use {'hrsh7th/nvim-cmp','hrsh7th/cmp-buffer','hrsh7th/cmp-path','hrsh7th/cmp-cmdline','saadparwaiz1/cmp_luasnip',}   
-	
-  use {'L3MON4D3/LuaSnip', 'rafamadriz/friendly-snippets'}
+    use {
+        'VonHeikemen/lsp-zero.nvim',
+        requires = {
+            -- LSP Support
+            {'neovim/nvim-lspconfig'},
+            {'williamboman/mason.nvim'},
+            {'williamboman/mason-lspconfig.nvim'},
 
-  use 'Mofiqul/vscode.nvim'
+            -- Autocompletion
+            {'hrsh7th/nvim-cmp'},
+            {'hrsh7th/cmp-buffer'},
+            {'hrsh7th/cmp-path'},
+            {'saadparwaiz1/cmp_luasnip'},
+            {'hrsh7th/cmp-nvim-lsp'},
+            {'hrsh7th/cmp-nvim-lua'},
 
-  use 'nvim-telescope/telescope.nvim'
+            -- Snippets
+            {'L3MON4D3/LuaSnip'},
+            {'rafamadriz/friendly-snippets'},
+        }
+    }
 
-  use {'kyazdani42/nvim-tree.lua', require = {'nvim-tree/nvim-web-devicons'}}
+    use 'Mofiqul/vscode.nvim'
 
-  use 'terrortylor/nvim-comment'
+    use 'nvim-telescope/telescope.nvim'
 
-  -- use 'elkowar/yuck.vim'
+    use 'nvim-lua/plenary.nvim'
+
+
+    use {'kyazdani42/nvim-tree.lua', require = {'nvim-tree/nvim-web-devicons'}}
+
+    use 'numToStr/Comment.nvim'
+
+    use 'nvim-tree/nvim-web-devicons'
+    use {'romgrk/barbar.nvim', wants = 'nvim-web-devicons'}
+
+    -- use 'elkowar/yuck.vim'
+    use {"shortcuts/no-neck-pain.nvim", tag = "*" }
+
+    use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
+    use {'nvim-tree/nvim-tree.lua', requires = { 'nvim-tree/nvim-web-devicons' }}
 
 end)
-
