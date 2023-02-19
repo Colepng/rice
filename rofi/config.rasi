@@ -13,6 +13,8 @@ configuration {
 	cycle: true;
 	filter: "";
 	scroll-method: 0;
+    show-icons: true;
+    icon-theme: "Papirus";
 	normalize-match: true;
 	show-icons: true;
 	icon-theme: "Papirus";
@@ -184,4 +186,10 @@ configuration {
 //@theme "/home/cole/.local/share/rofi/themes/rounded-purple-dark.rasi"
 /* @theme "/home/cole/.local/share/rofi/themes/spotlight-dark.rasi" */
 //@theme "/home/cole/.local/share/rofi/themes/windows11-list-light.rasi"
-@theme "/home/cole/.local/share/rofi/themes/launchpad.rasi"
+/* @theme "/home/cole/.local/share/rofi/themes/launchpad.rasi" */
+/* @theme "themes/sidetab-nord.rasi" */
+/* Dark theme. */
+@import "~/.cache/wal/colors-rofi-dark"
+
+/* Light theme. */
+/* @import "~/.cache/wal/colors-rofi-light" */

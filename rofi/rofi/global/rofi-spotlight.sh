@@ -9,7 +9,7 @@ MY_PATH="$(realpath "$0" | xargs dirname)"
 HIST_FILE="${MY_PATH}/history.txt"
 
 OPENER=xdg-open
-TERM_EMU=kitty
+TERM_EMU=wezterm
 TEXT_EDITOR=$EDITOR
 FILE_MANAGER=xdg-open
 BLUETOOTH_SEND=blueman-sendto
