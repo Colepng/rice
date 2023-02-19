@@ -19,7 +19,7 @@
 ## MPD clients (eg. ncmpc) also use that location.
 ##
 #
-#lyrics_directory = ~/.lyrics
+lyrics_directory = ~/.lyrics
 #
 ##### connection settings #####
 #
@@ -242,7 +242,7 @@
 #
 #alternative_header_first_line_format = $b$1$aqqu$/a$9 {%t}|{%f} $1$atqq$/a$9$/b
 #
-#alternative_header_second_line_format = {{$4$b%a$/b$9}{ - $7%b$9}{ ($4%y$9)}}|{%D}
+alternative_header_second_line_format = {{$4$b%a$/b$9}{ - $7%b - %g$9}{ ($4%y$9)}}|{%D}
 #
 #current_item_prefix = $(yellow)$r
 #
@@ -377,7 +377,7 @@
 #
 ## Available values: classic, alternative.
 ##
-#user_interface = classic
+user_interface = alternative
 #
 #data_fetching_delay = yes
 #
@@ -385,9 +385,9 @@
 ##
 #media_library_primary_tag = artist
 #
-#media_library_albums_split_by_date = yes
+media_library_albums_split_by_date = no
 #
-#media_library_hide_album_dates = no
+# media_library_hide_album_dates = yes 
 #
 ## Available values: wrapped, normal.
 ##
@@ -410,9 +410,9 @@
 #
 #lyrics_fetchers = azlyrics, genius, musixmatch, sing365, metrolyrics, justsomelyrics, jahlyrics, plyrics, tekstowo, zeneszoveg, internet
 #
-#follow_now_playing_lyrics = no
+#follow_now_playing_lyrics = yes
 #
-#fetch_lyrics_for_current_song_in_background = no
+#fetch_lyrics_for_current_song_in_background = yes 
 #
 #store_lyrics_in_song_dir = no
 #
@@ -488,9 +488,9 @@
 #
 #display_volume_level = yes
 #
-#display_bitrate = no
+display_bitrate = yes 
 #
-#display_remaining_time = no
+display_remaining_time = yes
 #
 ## Available values: none, basic, extended, perl.
 ##
@@ -543,7 +543,7 @@
 #
 #search_engine_default_search_mode = 1
 #
-external_editor = nvim
+external_editor = neovim
 #
 ## Note: set to yes if external editor is a console application.
 ##
