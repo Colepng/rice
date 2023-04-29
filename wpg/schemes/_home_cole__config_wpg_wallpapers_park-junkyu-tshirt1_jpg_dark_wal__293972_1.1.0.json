@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cole/.config/wpg/wallpapers/park-junkyu-tshirt1.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0d0d0d",
+        "foreground": "#f4f4f4",
+        "cursor": "#f4f4f4"
+    },
+    "colors": {
+        "color0": "#0d0d0d",
+        "color1": "#A09F9F",
+        "color2": "#AFAFAF",
+        "color3": "#C0BFC0",
+        "color4": "#D3D3D3",
+        "color5": "#E0DFE0",
+        "color6": "#F3F3F3",
+        "color7": "#f4f4f4",
+        "color8": "#aaaaaa",
+        "color9": "#A09F9F",
+        "color10": "#AFAFAF",
+        "color11": "#C0BFC0",
+        "color12": "#D3D3D3",
+        "color13": "#E0DFE0",
+        "color14": "#F3F3F3",
+        "color15": "#f4f4f4"
+    }
+}

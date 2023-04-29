@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cole/.config/wpg/wallpapers/KingdomLogo.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0b1e2b",
+        "foreground": "#d5dbd7",
+        "cursor": "#d5dbd7"
+    },
+    "colors": {
+        "color0": "#0b1e2b",
+        "color1": "#98C059",
+        "color2": "#64778B",
+        "color3": "#788A9B",
+        "color4": "#7F8FA0",
+        "color5": "#94A2AE",
+        "color6": "#B2BBC6",
+        "color7": "#d5dbd7",
+        "color8": "#959996",
+        "color9": "#98C059",
+        "color10": "#64778B",
+        "color11": "#788A9B",
+        "color12": "#7F8FA0",
+        "color13": "#94A2AE",
+        "color14": "#B2BBC6",
+        "color15": "#d5dbd7"
+    }
+}

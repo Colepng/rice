@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cole/.config/wpg/wallpapers/park-junkyu-print512.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#101010",
+        "foreground": "#f5f5f5",
+        "cursor": "#f5f5f5"
+    },
+    "colors": {
+        "color0": "#101010",
+        "color1": "#AFAFAF",
+        "color2": "#EC99EF",
+        "color3": "#D2D2D2",
+        "color4": "#F0D5F6",
+        "color5": "#F5F5F5",
+        "color6": "#FAFAFA",
+        "color7": "#f5f5f5",
+        "color8": "#ababab",
+        "color9": "#AFAFAF",
+        "color10": "#EC99EF",
+        "color11": "#D2D2D2",
+        "color12": "#F0D5F6",
+        "color13": "#F5F5F5",
+        "color14": "#FAFAFA",
+        "color15": "#f5f5f5"
+    }
+}

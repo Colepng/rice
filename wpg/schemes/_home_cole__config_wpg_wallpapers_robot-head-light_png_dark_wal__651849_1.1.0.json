@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cole/.config/wpg/wallpapers/robot-head-light.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#181214",
+        "foreground": "#e1dfd8",
+        "cursor": "#e1dfd8"
+    },
+    "colors": {
+        "color0": "#181214",
+        "color1": "#928F8A",
+        "color2": "#A5A29A",
+        "color3": "#B7B4AA",
+        "color4": "#C2BEB3",
+        "color5": "#CDC8BC",
+        "color6": "#D5D0C2",
+        "color7": "#e1dfd8",
+        "color8": "#9d9c97",
+        "color9": "#928F8A",
+        "color10": "#A5A29A",
+        "color11": "#B7B4AA",
+        "color12": "#C2BEB3",
+        "color13": "#CDC8BC",
+        "color14": "#D5D0C2",
+        "color15": "#e1dfd8"
+    }
+}
