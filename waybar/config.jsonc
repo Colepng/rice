@@ -10,8 +10,13 @@
         "clock",
         "custom/weather",
         "wlr/workspaces"
+        // "hyprland/window"
     ],
-    "modules-center": ["hyprland/window"],
+    "modules-center": [
+        "image",
+        // "mpris"
+        "mpd"
+    ],
     "modules-right": [
         // "keyboard-state",
         "tray",
@@ -43,6 +48,52 @@
             "9": [],
             "10": []
         }
+    },
+    "image": {
+        "exec":"~/.config/waybar/scripts/album_art.sh",
+        "size": 40,
+        "interval": 1,  
+        "on-click": "playerctl play-pause"
+    },
+    "mpris": {
+        "format": "{status_icon} {dynamic}",
+        "format-paused": "{status_icon} {dynamic}",
+        // "player-icons": {
+        //     "default": "▶",
+        //     "mpv": "🎵"
+        // },
+        "status-icons": {
+            "paused": "⏸",
+            "playing": "▶"
+        }
+	// "ignored-players": ["firefox"]
+    },
+    "mpd": {
+        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S})",
+        // 
+        "format-disconnected": "Disconnected ",
+        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+        "interval": 10,
+        "consume-icons": {
+            "on": " " // Icon shows only when "consume" is on
+        },
+        "random-icons": {
+            "off": "<span color=\"#f53c3c\"></span> ", // Icon grayed out when "random" is off
+            "on": " "
+        },
+        "repeat-icons": {
+            "on": " "
+        },
+        "single-icons": {
+            "on": "1 "
+        },
+        "state-icons": {
+            "paused": "",
+            "playing": ""
+        },
+        "tooltip-format": "MPD (connected)",
+        "tooltip-format-disconnected": "MPD (disconnected)",
+        "on-click": "playerctl play-pause"
     },
     "custom/updates": {
         "exec": "(pacman -Qu ; yay -Qua) | wc -l",
