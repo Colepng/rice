@@ -1,1 +1,1 @@
-require('Comment').setup()
+require('nvim_comment').setup()
