@@ -63,5 +63,6 @@ return require('packer').startup(function(use)
 
   -- use 'elkowar/yuck.vim'
 
+  use 'lervag/vimtex'
 end)
 
