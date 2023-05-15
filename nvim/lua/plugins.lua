@@ -64,5 +64,54 @@ return require('packer').startup(function(use)
   -- use 'elkowar/yuck.vim'
 
   use 'lervag/vimtex'
+
+  -- dashboard
+  use {
+      'glepnir/dashboard-nvim',
+      event = 'VimEnter',
+      config = function()
+	      require('dashboard').setup {
+		      theme = 'hyper',
+		      config = {
+			      -- week_header = {
+			      -- 				      enable = true,
+			      -- },
+			      shortcut = {
+				      -- { desc = '󰊳 Update', group = '@property', action = 'Lazy update', key = 'u' },
+				      {
+					      icon = ' ',
+					      icon_hl = '@variable',
+					      desc = 'Files',
+					      group = 'Label',
+					      action = 'Telescope find_files',
+					      key = 'f',
+				      },
+                      {
+                          icon = '',
+					      icon_hl = '@variable',
+					      group = 'Label',
+                          desc = 'Find word',
+                          action = 'Telescope live_grep',
+                          key = 'g',
+                      },
+				      -- {
+				      -- 					      desc = ' Apps',
+				      -- 					      group = 'DiagnosticHint',
+				      -- 					      action = 'Telescope app',
+				      -- 					      key = 'a',
+				      -- },
+				      -- {
+				      -- 					      desc = ' dotfiles',
+				      -- 					      group = 'Number',
+				      -- 					      action = 'Telescope dotfiles',
+				      -- 					      key = 'd',
+				      -- },
+			      },
+                  footer = { '', 'Blazing Fast' }
+		      },
+	      }
+      end,
+      requires = {'nvim-tree/nvim-web-devicons'}
+  }
 end)
 

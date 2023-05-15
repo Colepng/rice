@@ -119,6 +119,14 @@ _G.packer_plugins = {
     path = "/home/cole/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
+  ["dashboard-nvim"] = {
+    config = { "\27LJ\2\nÍ\2\0\0\6\0\v\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\6\0004\4\3\0005\5\4\0>\5\1\0045\5\5\0>\5\2\4=\4\a\0035\4\b\0=\4\t\3=\3\n\2B\0\2\1K\0\1\0\vconfig\vfooter\1\3\0\0\5\17Blazing Fast\rshortcut\1\0\0\1\0\6\ficon_hl\14@variable\ticon\5\tdesc\14Find word\bkey\6g\ngroup\nLabel\vaction\24Telescope live_grep\1\0\6\tdesc\nFiles\ticon\tîˆ• \ficon_hl\14@variable\bkey\6f\ngroup\nLabel\vaction\25Telescope find_files\1\0\1\ntheme\nhyper\nsetup\14dashboard\frequire\0" },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/home/cole/.local/share/nvim/site/pack/packer/opt/dashboard-nvim",
+    url = "https://github.com/glepnir/dashboard-nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/cole/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -217,6 +225,13 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+vim.cmd [[augroup packer_load_aucmds]]
+vim.cmd [[au!]]
+  -- Event lazy-loads
+time([[Defining lazy-load event autocommands]], true)
+vim.cmd [[au VimEnter * ++once lua require("packer.load")({'dashboard-nvim'}, { event = "VimEnter *" }, _G.packer_plugins)]]
+time([[Defining lazy-load event autocommands]], false)
+vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
