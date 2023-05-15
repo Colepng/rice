@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cole/.config/wpg/wallpapers/escape_velocity.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#01060E",
+        "foreground": "#e5c6e0",
+        "cursor": "#e5c6e0"
+    },
+    "colors": {
+        "color0": "#01060E",
+        "color1": "#143F84",
+        "color2": "#215598",
+        "color3": "#5C5E9F",
+        "color4": "#7A6A99",
+        "color5": "#A16EAA",
+        "color6": "#C47BB8",
+        "color7": "#e5c6e0",
+        "color8": "#a08a9c",
+        "color9": "#143F84",
+        "color10": "#215598",
+        "color11": "#5C5E9F",
+        "color12": "#7A6A99",
+        "color13": "#A16EAA",
+        "color14": "#C47BB8",
+        "color15": "#e5c6e0"
+    }
+}

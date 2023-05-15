@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cole/.config/wpg/wallpapers/zaki-aby-close-up-angle-2.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#090C0E",
+        "foreground": "#a3c4c6",
+        "cursor": "#a3c4c6"
+    },
+    "colors": {
+        "color0": "#090C0E",
+        "color1": "#2A4B51",
+        "color2": "#2A5D64",
+        "color3": "#4D6863",
+        "color4": "#34986B",
+        "color5": "#B59473",
+        "color6": "#3E7291",
+        "color7": "#a3c4c6",
+        "color8": "#72898a",
+        "color9": "#2A4B51",
+        "color10": "#2A5D64",
+        "color11": "#4D6863",
+        "color12": "#34986B",
+        "color13": "#B59473",
+        "color14": "#3E7291",
+        "color15": "#a3c4c6"
+    }
+}

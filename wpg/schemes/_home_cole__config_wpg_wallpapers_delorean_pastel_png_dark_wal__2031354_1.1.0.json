@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cole/.config/wpg/wallpapers/delorean_pastel.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#1e181e",
+        "foreground": "#dbc9db",
+        "cursor": "#dbc9db"
+    },
+    "colors": {
+        "color0": "#1e181e",
+        "color1": "#5691B3",
+        "color2": "#5FABD6",
+        "color3": "#66A7DB",
+        "color4": "#EDAEAC",
+        "color5": "#B2B6CE",
+        "color6": "#C59DC2",
+        "color7": "#dbc9db",
+        "color8": "#998c99",
+        "color9": "#5691B3",
+        "color10": "#5FABD6",
+        "color11": "#66A7DB",
+        "color12": "#EDAEAC",
+        "color13": "#B2B6CE",
+        "color14": "#C59DC2",
+        "color15": "#dbc9db"
+    }
+}

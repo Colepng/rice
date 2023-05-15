@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cole/.config/wpg/wallpapers/od_fuck_u_nvidia_purple.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0a1510",
+        "foreground": "#d8ade4",
+        "cursor": "#d8ade4"
+    },
+    "colors": {
+        "color0": "#0a1510",
+        "color1": "#754D88",
+        "color2": "#855399",
+        "color3": "#965AAB",
+        "color4": "#A15FB7",
+        "color5": "#A561BB",
+        "color6": "#B869D0",
+        "color7": "#d8ade4",
+        "color8": "#97799f",
+        "color9": "#754D88",
+        "color10": "#855399",
+        "color11": "#965AAB",
+        "color12": "#A15FB7",
+        "color13": "#A561BB",
+        "color14": "#B869D0",
+        "color15": "#d8ade4"
+    }
+}

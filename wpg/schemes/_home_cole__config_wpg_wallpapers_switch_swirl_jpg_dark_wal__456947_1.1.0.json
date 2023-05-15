@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cole/.config/wpg/wallpapers/switch_swirl.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0D1017",
+        "foreground": "#9897c0",
+        "cursor": "#9897c0"
+    },
+    "colors": {
+        "color0": "#0D1017",
+        "color1": "#552655",
+        "color2": "#565454",
+        "color3": "#D20C2D",
+        "color4": "#FE0028",
+        "color5": "#9F3247",
+        "color6": "#6D358A",
+        "color7": "#9897c0",
+        "color8": "#6a6986",
+        "color9": "#552655",
+        "color10": "#565454",
+        "color11": "#D20C2D",
+        "color12": "#FE0028",
+        "color13": "#9F3247",
+        "color14": "#6D358A",
+        "color15": "#9897c0"
+    }
+}

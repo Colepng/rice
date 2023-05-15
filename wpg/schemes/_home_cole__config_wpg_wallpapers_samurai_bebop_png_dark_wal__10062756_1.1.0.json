@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cole/.config/wpg/wallpapers/samurai_bebop.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#15121c",
+        "foreground": "#cae6f0",
+        "cursor": "#cae6f0"
+    },
+    "colors": {
+        "color0": "#15121c",
+        "color1": "#B3A15E",
+        "color2": "#5B6E87",
+        "color3": "#B67499",
+        "color4": "#68B5C5",
+        "color5": "#DC97AD",
+        "color6": "#C1A4BB",
+        "color7": "#cae6f0",
+        "color8": "#8da1a8",
+        "color9": "#B3A15E",
+        "color10": "#5B6E87",
+        "color11": "#B67499",
+        "color12": "#68B5C5",
+        "color13": "#DC97AD",
+        "color14": "#C1A4BB",
+        "color15": "#cae6f0"
+    }
+}

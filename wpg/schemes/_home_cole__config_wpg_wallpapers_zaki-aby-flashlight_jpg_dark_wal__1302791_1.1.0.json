@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cole/.config/wpg/wallpapers/zaki-aby-flashlight.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0D1512",
+        "foreground": "#a4c8c8",
+        "cursor": "#a4c8c8"
+    },
+    "colors": {
+        "color0": "#0D1512",
+        "color1": "#325353",
+        "color2": "#585C56",
+        "color3": "#A35A3E",
+        "color4": "#4D9664",
+        "color5": "#AE975E",
+        "color6": "#526792",
+        "color7": "#a4c8c8",
+        "color8": "#728c8c",
+        "color9": "#325353",
+        "color10": "#585C56",
+        "color11": "#A35A3E",
+        "color12": "#4D9664",
+        "color13": "#AE975E",
+        "color14": "#526792",
+        "color15": "#a4c8c8"
+    }
+}

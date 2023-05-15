@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cole/.config/wpg/wallpapers/zaki-aby-back-top.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0d0a0d",
+        "foreground": "#9dd3d5",
+        "cursor": "#9dd3d5"
+    },
+    "colors": {
+        "color0": "#0d0a0d",
+        "color1": "#245865",
+        "color2": "#4F4840",
+        "color3": "#34936D",
+        "color4": "#2C708D",
+        "color5": "#48758D",
+        "color6": "#299A9C",
+        "color7": "#9dd3d5",
+        "color8": "#6d9395",
+        "color9": "#245865",
+        "color10": "#4F4840",
+        "color11": "#34936D",
+        "color12": "#2C708D",
+        "color13": "#48758D",
+        "color14": "#299A9C",
+        "color15": "#9dd3d5"
+    }
+}

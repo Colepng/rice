@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cole/.config/wpg/wallpapers/winter-wallpaper.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0b0a0d",
+        "foreground": "#d7b8bc",
+        "cursor": "#d7b8bc"
+    },
+    "colors": {
+        "color0": "#0b0a0d",
+        "color1": "#4F3B5F",
+        "color2": "#5C4C69",
+        "color3": "#9E6172",
+        "color4": "#776287",
+        "color5": "#9C6F8E",
+        "color6": "#CC7A8E",
+        "color7": "#d7b8bc",
+        "color8": "#968083",
+        "color9": "#4F3B5F",
+        "color10": "#5C4C69",
+        "color11": "#9E6172",
+        "color12": "#776287",
+        "color13": "#9C6F8E",
+        "color14": "#CC7A8E",
+        "color15": "#d7b8bc"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/cole/.config/wpg/wallpapers/od_error.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#171a1e",
+        "foreground": "#dddfe1",
+        "cursor": "#dddfe1"
+    },
+    "colors": {
+        "color0": "#171a1e",
+        "color1": "#7B828A",
+        "color2": "#898E95",
+        "color3": "#999EA5",
+        "color4": "#ACB0B6",
+        "color5": "#B8BDC3",
+        "color6": "#BDC2C7",
+        "color7": "#dddfe1",
+        "color8": "#9a9c9d",
+        "color9": "#7B828A",
+        "color10": "#898E95",
+        "color11": "#999EA5",
+        "color12": "#ACB0B6",
+        "color13": "#B8BDC3",
+        "color14": "#BDC2C7",
+        "color15": "#dddfe1"
+    }
+}

@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-wpg -rs 'colour_bomb.png' 'colour_bomb.png'
+wpg -rs 'winter-wallpaper.jpg' 'winter-wallpaper.jpg'
