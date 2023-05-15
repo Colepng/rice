@@ -18,3 +18,7 @@
 !rofi/**
 !pipewire/**
 !ncmpcpp/**
+!Wallpapers/**
+
+# blacklist for some reason
+JetBrains/
